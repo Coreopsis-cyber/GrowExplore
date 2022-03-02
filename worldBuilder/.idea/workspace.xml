@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdccf442-5f22-4d87-a4f5-51d0d30567d2" name="Changes" comment="Removed /admin path from the login as it was redundent code&#10;Done URL tests for login and gardenGame (though not currently linked up)&#10;27/02/2022 14:58">
+    <list default="true" id="bdccf442-5f22-4d87-a4f5-51d0d30567d2" name="Changes" comment="Testing commit&#10;27/02/2022 14:58">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Login/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Login/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Login/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Login/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Login/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gardenGame/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/gardenGame/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/gps_locator.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/gps_locator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/worldBuilder/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/worldBuilder/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/worldBuilder/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/worldBuilder/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +31,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="25hEjh8jhanq4RrviU1lFnrHg9p" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -36,6 +53,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Login/tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -68,7 +88,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646068844930</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixing error in last commit&#10;27/02/2022 14:58">
+      <created>1646069188578</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1646069188578</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Testing commit&#10;27/02/2022 14:58">
+      <created>1646227679688</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1646227679688</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,6 +131,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Removed /admin path from the login as it was redundent code&#10;Done URL tests for login and gardenGame (though not currently linked up)&#10;27/02/2022 14:58" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed /admin path from the login as it was redundent code&#10;Done URL tests for login and gardenGame (though not currently linked up)&#10;27/02/2022 14:58" />
+    <MESSAGE value="Fixing error in last commit&#10;27/02/2022 14:58" />
+    <MESSAGE value="Testing commit&#10;27/02/2022 14:58" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing commit&#10;27/02/2022 14:58" />
   </component>
 </project>

@@ -106,6 +106,7 @@ function showPosition(position) {
             if (Math.sqrt(x*x + y*y)<0.1) {
 
                 outputText += " "+locations[i];
+
             }
 
         }
@@ -115,6 +116,7 @@ function showPosition(position) {
         }else {
             output.innerHTML = "You are at:" + outputText
         }
+        updateStreak(outputText);
 
     } else { //Current coordinates are outside the bounds of the campus coordinates
         console.log (currentLatitude + ", " + currentLongitude)
@@ -122,4 +124,10 @@ function showPosition(position) {
         output.innerHTML = "You are outside the university";
     }
 
+}
+function updateStreak(location){
+    var database = openDatabase('db', '1.0', 'Database Storing User info', 2048*2048)
+    database.transaction(function (tx){
+        tx.executeSql('UPDATE Streak SET Number = Number +1 WHERE Location = location');
+    })
 }

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'gardenGame.apps.gardengameConfig',
+    'Login.apps.LoginConfig',
     'crispy_forms'
 ]
 

@@ -4,8 +4,12 @@ from .forms import NewUserForm
 from django.contrib.auth import login, authenticate
 from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm
+##from django.views.decorator import csrf_exempt
+##from rest_framework.parsers import JSONParser
+##from django.http.response import JsonResponse
 
-# Create your views here.
+from Login.models import Users
+
 
 def homepage(request):
 	return render(request, 'homepage.html')
@@ -26,16 +30,22 @@ def login_request(request):
 		else:
 			messages.error(request,"Invalid username or password.")
 	form = AuthenticationForm()
-	return render(request=request, template_name="login.html", context={"login_form":form})
+	return render(request=request, template_name="login.html", context={"login_form":form}) ##redirects to login
 
 def register_request(request):
 	if request.method == "POST":
 		form = NewUserForm(request.POST)
+		##StreakForm = NewStreakForm(request.POST)
 		if form.is_valid():
 			user = form.save()
+			##if StreakForm.is_valid():
+			  ##  StreakForm.save()
 			login(request, user)
 			messages.success(request, "Registration successful." )
 			return redirect('/')
 		messages.error(request, "Unsuccessful registration. Invalid information.")
 	form = NewUserForm()
+##	StreakForm = NewStreakForm()
 	return render (request=request, template_name="register.html", context={"register_form":form})
+
+
