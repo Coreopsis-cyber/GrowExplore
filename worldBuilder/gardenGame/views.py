@@ -3,9 +3,9 @@ from pyexpat import model
 import re
 from ssl import AlertDescription
 from django.shortcuts import render
-from .forms import buildingForm
+from .forms import buildingForm, reportToAdminForm
 from django.http import HttpResponseRedirect
-from .models import buildingOfTheDay as BOTDModel
+from .models import buildingOfTheDay as BOTDModel, reportToAdmin
 
 # Create your views here.
 
@@ -43,6 +43,18 @@ def buildingOfTheDay(request):
         form = buildingForm()
         if 'submitted' in request.GET:
             submitted = True
-
-    # if user is an admin user, allow for entry
     return render(request, 'buildingOfTheDay.html', {"form": form, 'submitted': submitted, 'building_list': building_list})
+
+
+def reportToAdmin(request):
+    submitted = False
+    if request.method == "POST":
+        form = reportToAdminForm(request.POST)
+        if form.is_valid():
+            form.save()
+        return HttpResponseRedirect('/main/reportToAdmin?submitted=True')
+    else:
+        form = reportToAdminForm()
+        if 'submitted' in request.GET:
+            submitted = True
+    return render(request, 'reportToAdmin.html', {"form": form, 'submitted': submitted})

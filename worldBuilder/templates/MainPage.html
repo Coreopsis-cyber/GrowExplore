@@ -38,7 +38,7 @@
      <p> building of the Day!
     
       {% for building in building_list %} {% if today == building.date %}
-      {{building.building_name}} : {{building.buidling_desc}} {% endif %} {% endfor %}
+      {{building.name}} : {{building.description}} {% endif %} {% endfor %}
     </p>
 
 
@@ -48,7 +48,11 @@
       <a target="_blank" href="https://icons8.com/icon/19190/potted-plant"
         >Potted Plant</a
       >
+      
       icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      {% if request.user.is_superuser == False %}
+      <a href="http://127.0.0.1:8000/main/reportToAdmin">report problem</a>
+      {% endif %}
     </div>
 
     <script src="{% static 'gps_locator.js' %}"></script>
