@@ -10,9 +10,10 @@ BUILDING_CHOICES = []
 REWARD_CHOICES = [("water_can.png", "water can")]
 
 
-# Need to implement reward assests in the config file
+# Need to implement reward assests in the config file to automatically fetch all possible rewards
 
 # Fetches Building name from the config file, new buildings can be added
+# Had some trouble with config path
 with open('/Users/vidipkhattar/Downloads/ADjangoApp/worldBuilder/static/config.json') as data_file:
     data = json.load(data_file)
     for item in data['coordinates']:
@@ -33,5 +34,5 @@ class buildingOfTheDay(models.Model):
 class reportToAdmin(models.Model):
     problem_name = models.CharField(max_length=200)
     problem_description = models.CharField(max_length=200)
-    username = models.CharField(max_length=200, default=request.user.id)
-    email = models.CharField(max_length=200, default=request.user.id)
+    username = models.CharField(max_length=200)
+    email = models.CharField(max_length=200)
