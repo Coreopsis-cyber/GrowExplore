@@ -17,7 +17,7 @@
       {% endif %}
     </ul>
 
-    {% if submitted == True %} Form was submitted <a style="color:blue;" href="http://127.0.0.1:8000/main/buildingOfTheDay">Submit another one?</a>{% elif submitted == False %}
+    {% if submitted == True %} Form was submitted <a style="color:blue;" href="http://127.0.0.1:8000/main/reportToAdmin">Submit another one?</a>{% elif submitted == False %}
 
     <form method="post">
       {% csrf_token %} {{form.as_p}}

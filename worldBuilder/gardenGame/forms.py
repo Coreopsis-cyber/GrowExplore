@@ -18,5 +18,3 @@ class reportToAdminForm(ModelForm):
     class Meta:
         model = reportToAdmin
         fields = ('problem_name', 'problem_description', 'username', 'email')
-        widgets = {'username': forms.HiddenInput(),
-                   'email': forms.HiddenInput()}
