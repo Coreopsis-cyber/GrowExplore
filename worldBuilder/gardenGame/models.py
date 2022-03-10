@@ -34,5 +34,5 @@ class buildingOfTheDay(models.Model):
 class reportToAdmin(models.Model):
     problem_name = models.CharField(max_length=200)
     problem_description = models.CharField(max_length=200)
-    username = models.CharField(max_length=200, default='check')
-    email = models.CharField(max_length=200, default='hekjd')
+    username = models.CharField(max_length=200, default='null')
+    email = models.CharField(max_length=200, default='null')
