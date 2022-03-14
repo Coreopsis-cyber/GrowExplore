@@ -111,7 +111,6 @@ function showPosition(position) {
                     outputText += " & "+locations[i];
                 }
             }
-
         }
 
         if (outputText.localeCompare("") === 0) {
