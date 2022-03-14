@@ -2,7 +2,8 @@
 {% load static%}
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Main Page</title>
     <link rel="stylesheet" href="{% static 'styles.css' %}" />
     <link rel="icon" type="image/png" href="{% static 'favicon.png' %}" />
@@ -34,7 +35,6 @@
       onclick="getLocation()"
       alt="Check In"
       class="checkIn"
-
     />
      <p>
       Building of the Day!:
@@ -47,9 +47,7 @@
     <p id="output" class="output"></p>
 
     <div class="footer">
-      <a target="_blank" href="https://icons8.com/icon/19190/potted-plant"
-        >Potted Plant</a
-      >
+      <a target="_blank" href="https://icons8.com/icon/19190/potted-plant">Potted Plant</a>
       icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     </div>
 
