@@ -45,3 +45,4 @@ def buildingOfTheDay(request):
         if 'submitted' in request.GET:
             submitted = True
     return render(request, 'buildingOfTheDay.html', {"form": form, 'submitted': submitted, 'building_list': building_list})
+

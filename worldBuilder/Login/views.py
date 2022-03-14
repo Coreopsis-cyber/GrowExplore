@@ -4,7 +4,10 @@ from .forms import NewUserForm
 from django.contrib.auth import login, authenticate
 from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm
-
+#from django.contrib.auth.models import User
+from Login.models import CustomUser as User
+import sqlite3
+from datetime import date
 # Create your views here.
 
 def homepage(request):
@@ -39,3 +42,5 @@ def register_request(request):
 		messages.error(request, "Unsuccessful registration. Invalid information.")
 	form = NewUserForm()
 	return render (request=request, template_name="register.html", context={"register_form":form})
+
+
